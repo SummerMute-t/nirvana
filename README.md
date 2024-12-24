@@ -11,12 +11,24 @@ Some complicated tasks like managing liquidity pools on Solana can be challengin
 ## Features
 
 - **Hierarchical Communication Mode**: Designate a leader to manage and coordinate interactions among team members.
-- **Joint Communication Mode(WIP)**: Foster equal participation and collaboration among all agents without a designated leader.
 - **Dynamic Logging**: Automatically generates log files with system type and timestamp for enhanced traceability.
 - **Comprehensive Reporting**: Creates detailed Markdown reports capturing all communication cycles and interactions.
 - **TypeScript Integration**: Ensures type safety and maintainability with well-defined interfaces and modular code structure.
 - **Environment Configuration**: Easily configurable through .env and JSON configuration files.
 - **Scalable Architecture**: Designed to handle increasing numbers of agents and complex communication flows.
+
+## To Do
+
+- **Packaging utilize nirvana system as Framework**: Create a package to utilize Nirvana System as a framework for AI Agent communication.
+- **Joint Communication Mode**: Implement a mode where all agents can communicate with each other without a designated leader.
+- **AI Agent Integration**: Integrate additional AI Agent frameworks to support a wider range of natural language processing capabilities.
+- **Web Interface**: Develop a user-friendly web interface for easy configuration and monitoring of the Nirvana System.
+- **Enhanced Logging**: Implement advanced logging features such as error handling, warnings, and debugging information.
+- **Real-Time Reporting**: Enable real-time generation of reports during communication cycles for immediate feedback.
+- **Security Enhancements**: Implement security measures to protect sensitive data and prevent unauthorized access.
+- **Performance Optimization**: Optimize system performance to handle large volumes of data and complex communication scenarios.
+- **Testing Framework**: Develop a comprehensive testing framework to validate system functionality and performance.
+- **Documentation**: Create detailed documentation for the Nirvana System
 
 ### Supported AI Agent Frameworks
 
