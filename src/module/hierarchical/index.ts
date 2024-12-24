@@ -23,13 +23,13 @@ interface FollowerResponses {
 
 // LeaderAgent class responsible for managing followers
 class LeaderAgent {
-  private connector: ElizaConnector;
+  private elizaConnector: ElizaConnector;
   private goal: string;
   private leader: Member;
   private followers: Member[];
 
   constructor(connector: ElizaConnector, goal: string, leader: Member, followers: Member[]) {
-    this.connector = connector;
+    this.elizaConnector = connector;
     this.goal = goal;
     this.leader = leader;
     this.followers = followers;
@@ -38,11 +38,12 @@ class LeaderAgent {
   /**
    * Generates the meeting start message based on members' roles.
    * @param membersRoles - Array of member objects with their roles.
+   * @param goal - The goal of the meeting.
    * @returns The meeting start message.
    */
   async generateMeetingStartMessage(membersRoles: Member[], goal: string): Promise<string | undefined> {
     const rolesDescription = membersRoles.map(member => `${member.name} (${member.role})`).join(', ');
-    const response = await this.connector.sendMessage(this.leader.id, `The meeting is starting. Participants: ${rolesDescription}. Goal: ${goal}. You are leader, Please generate intro message.`);
+    const response = await this.elizaConnector.sendMessage(this.leader.id, `The meeting is starting. Participants: ${rolesDescription}. Goal: ${goal}. You are leader, Please generate intro message.`);
     return response?.text;
   }
 
@@ -53,7 +54,7 @@ class LeaderAgent {
    */
   async generateMeetingEndMessage(membersRoles: Member[]): Promise<string | undefined> {
     const rolesDescription = membersRoles.map(member => `${member.name} (${member.role})`).join(', ');
-    const response = await this.connector.sendMessage(this.leader.id, `The meeting is concluded. Participants: ${rolesDescription}. You are leader, Please generate outro message.`);
+    const response = await this.elizaConnector.sendMessage(this.leader.id, `The meeting is concluded. Participants: ${rolesDescription}. You are leader, Please generate outro message.`);
     return response?.text;
   }
 
@@ -66,7 +67,15 @@ class LeaderAgent {
     const responses: FollowerResponses = {};
 
     const sendPromises = this.followers.map(async (follower) => {
-      const response = await this.connector.sendMessage(follower.id, messageContent);
+      let response;
+      switch (follower.type) {
+        case "eliza":
+          response = await this.elizaConnector.sendMessage(follower.id, messageContent);
+          break;
+        default:
+          logger.warn(`Unsupported agent type: ${follower.type}`);
+          break;
+      }
       if (response) {
         responses[follower.id] = response.text;
       } else {
@@ -84,7 +93,7 @@ class LeaderAgent {
    * @returns The feedback message content.
    */
   async generateFeedback(responses: string): Promise<string | undefined> {
-    const response = await this.connector.sendMessage(this.leader.id, responses);
+    const response = await this.elizaConnector.sendMessage(this.leader.id, responses);
     return response?.text;
   }
 }

@@ -5,26 +5,31 @@
     {
       "id": "Agent1",
       "name": "Grace",
+      "type": "eliza",
       "role": "Developer"
     },
     {
       "id": "Agent2",
       "name": "Heidi",
+      "type": "eliza",
       "role": "Designer"
     },
     {
       "id": "Agent3",
       "name": "Ivan",
+      "type": "eliza",
       "role": "QA Engineer"
     },
     {
       "id": "Agent4",
       "name": "Judy",
+      "type": "eliza",
       "role": "DevOps Engineer"
     },
     {
       "id": "Agent5",
       "name": "Karl",
+      "type": "eliza",
       "role": "Product Manager"
     }
   ]

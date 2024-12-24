@@ -4,17 +4,20 @@
   "leader": {
     "id": "356b1b17-a809-06d6-bd91-de4462d4d148",
     "name": "Misa Summerdoll",
+    "type": "eliza",
     "role": "Team Leader"
   },
   "members": [
     {
       "id": "fa17d2e8-3c36-07de-9a26-ea3c2abe3e41",
       "name": "Rei Chan",
+      "type": "eliza",
       "role": "Community Manager"
     },
     {
       "id": "964d1ca6-29f9-00e0-b2c6-b16caf5bbed7",
       "name": "Kyle",
+      "type": "eliza",
       "role": "Chart Expert"
     }
   ]

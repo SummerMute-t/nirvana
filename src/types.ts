@@ -11,6 +11,7 @@ export interface GeneralizedAgentResponse {
 export interface Member {
     id: string;
     name: string;
+    type: "eliza" | undefined;
     role: string; // Description of the member's role within the group
 }
 

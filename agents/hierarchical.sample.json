@@ -4,27 +4,32 @@
   "leader": {
     "id": "Agent1",
     "name": "Alice",
+    "type": "eliza",
     "role": "Team Leader"
   },
   "members": [
     {
       "id": "Agent2",
       "name": "Charlie",
+      "type": "eliza",
       "role": "Designer"
     },
     {
       "id": "Agent3",
       "name": "Diana",
+      "type": "eliza",
       "role": "QA Engineer"
     },
     {
       "id": "Agent4",
       "name": "Eve",
+      "type": "eliza",
       "role": "DevOps Engineer"
     },
     {
       "id": "Agent5",
       "name": "Frank",
+      "type": "eliza",
       "role": "Product Manager"
     }
   ]
