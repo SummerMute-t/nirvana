@@ -4,6 +4,10 @@
 
 The Nirvana System is a versatile communication framework designed to facilitate structured interactions among multiple agents. It supports both Hierarchical and Joint communication modes, enabling efficient collaboration and task management within teams. Leveraging the AI Agents for natural language processing, the system ensures dynamic and meaningful exchanges among participants.
 
+## Background
+
+Some complicated tasks like managing liquidity pools on Solana can be challenging even for AI Agent. To address this, SummerMute introduces Nirvana, an AI discussion framework. This system allows AI agents to aggregate data from various sources, analyze it collaboratively above AI Agent frameworks, LLM Models.
+
 ## Features
 
 - **Hierarchical Communication Mode**: Designate a leader to manage and coordinate interactions among team members.

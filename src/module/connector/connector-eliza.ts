@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { GeneralizedAgentResponse, ElizaResponse } from '../../types';
 
-export class ElizaConnector {
+export default class ElizaConnector {
   private baseUrl: string;
 
   constructor(baseUrl: string) {

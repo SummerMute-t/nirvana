@@ -1,4 +1,4 @@
-import { ElizaConnector } from '../connector/connector-eliza';
+import { ElizaConnector } from '../connector';
 import { Member, GroupConfig } from '../../types';
 import * as fs from 'fs';
 import * as path from 'path';
