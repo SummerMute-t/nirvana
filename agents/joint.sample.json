@@ -1,0 +1,31 @@
+{
+  "type": "joint",
+  "goal": "Develop a new feature",
+  "members": [
+    {
+      "id": "Agent1",
+      "name": "Grace",
+      "role": "Developer"
+    },
+    {
+      "id": "Agent2",
+      "name": "Heidi",
+      "role": "Designer"
+    },
+    {
+      "id": "Agent3",
+      "name": "Ivan",
+      "role": "QA Engineer"
+    },
+    {
+      "id": "Agent4",
+      "name": "Judy",
+      "role": "DevOps Engineer"
+    },
+    {
+      "id": "Agent5",
+      "name": "Karl",
+      "role": "Product Manager"
+    }
+  ]
+}

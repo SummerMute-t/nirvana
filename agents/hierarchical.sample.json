@@ -1,0 +1,31 @@
+{
+  "type": "hierarchical",
+  "goal": "Develop a new feature",
+  "leader": {
+    "id": "Agent1",
+    "name": "Alice",
+    "role": "Team Leader"
+  },
+  "members": [
+    {
+      "id": "Agent2",
+      "name": "Charlie",
+      "role": "Designer"
+    },
+    {
+      "id": "Agent3",
+      "name": "Diana",
+      "role": "QA Engineer"
+    },
+    {
+      "id": "Agent4",
+      "name": "Eve",
+      "role": "DevOps Engineer"
+    },
+    {
+      "id": "Agent5",
+      "name": "Frank",
+      "role": "Product Manager"
+    }
+  ]
+}
