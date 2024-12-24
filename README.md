@@ -65,13 +65,13 @@ MAX_COMMUNICATION_CYCLES=10
 #### Agents Configuration
 
 Define your agents and their roles in JSON configuration files. Two separate configurations are provided for Hierarchical and Joint modes.
-Refer to the sample configuration files in agents/ for reference.
+Refer to the sample configuration files in groups/ for reference.
 
 ### Run
 
 To start the Nirvana System in Hierarchical Mode, execute the following command:
 
-pnpm start --config agents/filename.json
+pnpm start --config groups/filename.json
 
 # License
 
