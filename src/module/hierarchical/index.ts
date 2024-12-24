@@ -4,6 +4,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import dotenv from 'dotenv';
 import { createLogger, saveReport } from '../../utils/logger';
+import { sleep } from "../../utils/time";
 
 const logger = createLogger('hierarchical');
 
@@ -176,7 +177,7 @@ export class HierarchicalSystem {
 
       logger.info(`Waiting for the next cycle...`);
       console.log(`Waiting for the next cycle...`);
-      await this.sleep(30);
+      await sleep(30);
     }
 
     // Initial step: Leader generates the meeting start message based on members' roles
@@ -203,13 +204,5 @@ export class HierarchicalSystem {
 
     logger.info("Hierarchical System has completed all communication cycles.");
     console.log("\n=== The meeting has concluded. ===");
-  }
-
-  /**
-   * Helper function to pause execution for a given number of milliseconds.
-   * @param ms - Milliseconds to sleep.
-   */
-  private sleep(ms: number): Promise<void> {
-    return new Promise(resolve => setTimeout(resolve, ms));
   }
 }
