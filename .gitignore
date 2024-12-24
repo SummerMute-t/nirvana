@@ -15,7 +15,7 @@ packages/plugin-buttplug/intiface-engine
 
 dist/
 
-logs/
-reports/
+logs/**/*.log
+reports/**/*.md
 
 src/**/*.js
