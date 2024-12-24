@@ -107,17 +107,6 @@ class FollowerAgent {
     this.agent = agent;
     this.connector = connector;
   }
-
-  /**
-   * Processes feedback received from the leader.
-   * @param feedbackMessage - The feedback message.
-   */
-  processFeedback(feedbackMessage: string): void {
-    // Implement logic to handle feedback from Leader
-    // Example: Update internal state or adjust strategies
-    logger.info(`[${this.agent.id}] Received feedback: "${feedbackMessage}"`);
-    console.log(`[${this.agent.id}] Received feedback: "${feedbackMessage}"`);
-  }
 }
 
 // HierarchicalSystem class managing the overall communication cycles
