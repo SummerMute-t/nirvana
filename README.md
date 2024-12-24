@@ -1,5 +1,7 @@
 # Nirvana System
 
+![](docs/png/misa-nirvana.png)
+
 ## Overview
 
 The Nirvana System is a versatile communication framework designed to facilitate structured interactions among multiple agents. It supports both Hierarchical and Joint communication modes, enabling efficient collaboration and task management within teams. Leveraging the AI Agents for natural language processing, the system ensures dynamic and meaningful exchanges among participants.
