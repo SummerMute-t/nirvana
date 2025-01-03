@@ -1,14 +1,10 @@
 # Nirvana System
-## (Hierarchical Multi-AI-Agent Agency for DLMM investment)
 
-<div style="page-break-after: always;"></div>
+```
+Hierarchical Multi-AI-Agent Agency for DLMM investment
+```
 
-
-## Table of Contents
-
-
-{{TOC}}
-
+![](docs/png/misa-nirvana.png)
 
 <div style="page-break-after: always;"></div>
 
@@ -282,8 +278,6 @@ Intern Agents (IA) collect and preprocess raw data from on-chain and off-chain s
 
 
 ## Nirvana System
-
-![](docs/png/misa-nirvana.png)
 
 ### Overview
 
