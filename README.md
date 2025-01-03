@@ -1,8 +1,6 @@
 # Nirvana System
 
-```
-Hierarchical Multi-AI-Agent Agency for DLMM investment
-```
+- Hierarchical Multi-AI-Agent Agency for DLMM investment
 
 ![](docs/png/misa-nirvana.png)
 
