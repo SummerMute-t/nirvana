@@ -1,8 +1,6 @@
 # Nirvana System
 ## (Hierarchical Multi-AI-Agent Agency for DLMM investment)
 
-![](docs/png/misa-nirvana.png)
-
 <div style="page-break-after: always;"></div>
 
 
@@ -40,16 +38,24 @@ This marks the first real-world use of swarm or multi-agent AI structures in tra
 
 
 <div style="page-break-after: always;"></div>
+
 ## Background
+
 Challenges in DeFi Liquidity and Market Stability
+
 The decentralized finance (DeFi) revolution has unlocked new opportunities for Liquidity Providers (LPs) to generate revenue through trading fees. However, this innovation comes with inherent challenges:
+
 * Impermanent Loss reduces LP profitability as token prices deviate from their initial ratios.
 * The operational complexity of DLMM limits broader adoption due to the high demand for real-time management and expertise.
 * High Market Volatility disrupts the balance between liquidity and market stability.
+
 Project SummerMute was established to address these challenges. By integrating AI-driven automation and multi-agent systems, SummerMute offers a scalable and adaptive ecosystem that enables liquidity to flow intelligently and seamlessly.
+
 * Real-Time Adaptability: AI and multi-agent systems enable dynamic monitoring and decision-making, simplifying the management of DLMM pools. Research has demonstrated that Multi-Strategy Agents improve decision accuracy by simulating and selecting the most effective strategies in real-time, achieving up to 25% ROI【Kolonin, 2023】. 
 * Predictive Decision-Making: Sentiment analysis empowers SummerMute to anticipate market shifts rather than react to them. Models leveraging social media sentiment consistently outperform traditional strategies, delivering up to 25% higher ROI【Kolonin, 2023】【Nartey, 2023】.
+
 The integration of AI and multi-agent systems into liquidity management has consistently demonstrated its value through research and real-world applications. Below are the key areas where these technologies have proven to be effective:
+
 * Strategic Optimization: Adaptive Multi-Strategy Agents (AMSA) have shown remarkable effectiveness in dynamically selecting the best strategies for changing market conditions. By leveraging virtual simulations, AMSA frameworks identify and implement strategies that optimize performance while reducing risk. In controlled experiments, AMSA achieved up to 25% ROI, significantly outperforming traditional strategies reliant on manual adjustments or static rules【Kolonin, 2023】. These agents adapt in real time to market signals, ensuring optimal decision-making regardless of external volatility.
 * Predictive Market Insights: AI models integrating sentiment analysis have demonstrated superior accuracy in predicting market trends. By analyzing social media sentiment, these models detect early signs of market shifts, allowing liquidity pools to preemptively adjust parameters. A study showed that strategies informed by sentiment analysis consistently outperformed non-predictive strategies, achieving up to 25% higher ROI during periods of heightened volatility【Nartey, 2023】. Predictive models ensure that liquidity providers are better equipped to manage risk and capture opportunities, even in volatile markets.
 * Scalability and Operational Efficiency: Multi-agent systems allow for seamless integration of on-chain and off-chain data, creating a robust decision-making framework that scales across multiple liquidity pools. This minimizes the need for human intervention and ensures consistency in strategy execution. In practice, AI-driven frameworks have reduced operational overhead while improving response times to market changes, creating a more efficient and reliable liquidity ecosystem【Nartey, 2023】.
@@ -82,22 +88,16 @@ Existing automated liquidity provision (LP) solutions, such as traditional Autom
         - Monthly ROI
         - LP Opportunity Identification Speed
 
-
 2. **Risk Mitigation**
-* **Objective**: Interpret complex patterns such as sudden volume drops, suspicious
-  token flows, or abnormal trading behaviors using AI agents. While the current system focuses on identifying potential risks and providing actionable insights, future updates will enable AI agents to interact directly with wallets to execute automated risk mitigation strategies. The system dynamically analyzes short-term and long-term positions, offering recommendations for optimal fund distribution over time to minimize risks such as impermanent loss and market volatility.
-* **Details**: The current system monitors DLMM pools and generates alerts or
-  recommendations for actions such as exits or parameter adjustments to minimize potential losses. Future iterations will integrate wallet interaction capabilities, enabling AI agents to execute strategies such as Trailing Profit Exit and Liquidity Withdrawal on Low Volume autonomously. Negative Sentiment Exit and High Volatility Exit remain key focus areas, with automated execution planned in future updates to further safeguard liquidity against adverse market conditions.
-
-
-* **Performance Metrics**:
-  Current Phase:
-    * Risk Detection Accuracy
-    * Quality of Recommendations
-      Future Phase:
-    * Impermanent Loss Minimization
-    * Automated Risk Response Time
-
+   - **Objective**: Interpret complex patterns such as sudden volume drops, suspicious token flows, or abnormal trading behaviors using AI agents. While the current system focuses on identifying potential risks and providing actionable insights, future updates will enable AI agents to interact directly with wallets to execute automated risk mitigation strategies. The system dynamically analyzes short-term and long-term positions, offering recommendations for optimal fund distribution over time to minimize risks such as impermanent loss and market volatility.
+   - **Details**: The current system monitors DLMM pools and generates alerts or recommendations for actions such as exits or parameter adjustments to minimize potential losses. Future iterations will integrate wallet interaction capabilities, enabling AI agents to execute strategies such as Trailing Profit Exit and Liquidity Withdrawal on Low Volume autonomously. Negative Sentiment Exit and High Volatility Exit remain key focus areas, with automated execution planned in future updates to further safeguard liquidity against adverse market conditions.
+   - **Performance Metrics**:
+     - Current Phase:
+       - Risk Detection Accuracy
+       - Quality of Recommendations
+     - Future Phase:
+       - Impermanent Loss Minimization
+       - Automated Risk Response Time
 
 3. **Scalability and Flexibility**
     - **Objective:** Start with a minimalist baseline strategy and incrementally integrate additional data sources (e.g., Twitter feeds, DAO events, hackathon schedules).
@@ -105,7 +105,6 @@ Existing automated liquidity provision (LP) solutions, such as traditional Autom
     - **Performance Metrics:**
         - System Response Time with Added Data Sources
         - Strategy Adaptation Speed
-
 
 4. **Full Automation**
     - **Objective:** Develop and deploy a fully automated trading and liquidity provisioning system for DLMM pools.
@@ -129,7 +128,6 @@ Existing automated liquidity provision (LP) solutions, such as traditional Autom
 
 ### Hierarchical Structure Overview
 
-
 This architecture utilizes a **Multi-Agent Hierarchical Structure** to facilitate both token investments and automated liquidity provisioning within DLMM pools. Agents are organized in a pyramid-like hierarchy with specific connection ratios.
 
 - **IA (Intern Agent)** is connected to each **Expert Analyst Agent (EAA)** in an N:1 ratio.
@@ -138,16 +136,9 @@ This architecture utilizes a **Multi-Agent Hierarchical Structure** to facilitat
 
 This pyramid structure ensures scalability, specialized analysis, and efficient decision-making. The hierarchical structure can be visualized as follows:
 
-
-napkin-selection.png
-
-
 #### Component Definitions
 
-
-
-
-
+![](docs/png/agnet_hierarchical_structure.png)
 
 1. **Master Trading Agent (MTA)**
     - **Role:** The top-level decision-maker responsible for finalizing investment and liquidity provisioning strategies based on insights from EAAs.
@@ -160,7 +151,6 @@ napkin-selection.png
     - **Preferred AI Model:** ANTHROPIC (Claude-based)
     - **Rationale:** Excels in causal reasoning, handling long contexts, and providing stable decision-making guidance.
 
-
 2. **Expert Analyst Agents (EAA)**
     - **Role:** Specialized agents focused on specific domains of analysis for MTA based on information from IA. Social Narrative EAAs process large-scale social media data to extract trend metrics and integrate them with technical indicators for precise price prediction. This dual-layered analysis ensures that token allocations reflect both market sentiment and technical performance, enhancing strategic accuracy.
     - **Types of EAA:**
@@ -170,13 +160,11 @@ napkin-selection.png
             - **Preferred AI Model:** OPENAI (GPT-4)
             - **Rationale:** Excels at natural language processing, nuanced sentiment detection, and extracting key narratives from large volumes of text.
 
-
         2. **Technical Analysis EAA**
             - **Input:** Market data feeds from IA, including price charts, volume, volatility, and liquidity metrics.
             - **Output:** Identification of chart patterns, volatility spikes, liquidity trends, and fee-to-liquidity ratios. Provides signals indicating favorable entry or exit points for both token purchases and DLMM liquidity provision.
             - **Preferred AI Model:** OPENROUTER
             - **Rationale:** Suitable for integrating with multiple APIs and tools, enabling flexible data routing and numerical analysis for complex technical indicators.
-
 
         3. **Advisor Terminal EAA**
             - **Input:** Queries from the terminal for traders and operators (humans).
@@ -184,9 +172,6 @@ napkin-selection.png
             - **Preferred AI Model:** GOOGLE (PaLM-based)
             - **Rationale:** Strong at real-time Q&A and providing user-friendly, context-aware advice. Ideal for interactive dialogues and strategic recommendations.
             - **Exception:** Advisor Terminal EAA does not connect with IA; it directly interacts with human traders and operators.
-
-
-
 
 3. **IA (Intern Agent)**
     - **Role:** Acts as an intermediary between data sources and Expert Analyst Agents. Drawing from Probe-based systems, the hierarchical multi-agent structure facilitates distributed problem-solving by enabling agents to share insights and optimize actions collectively. This ensures robust decision-making even in rapidly changing DeFi environments.
@@ -221,7 +206,6 @@ Intern Agents (IA) collect and preprocess raw data from on-chain and off-chain s
         - Standardizes and formats the data using NANOGPT.
         - Forwards the cleaned dataset to the **Technical Analysis EAA**.
 
-
 2. **Expert Analyst Agents Stage**
     - **Social Narrative EAA (OPENAI):**
         - Receives data from Twitter IA.
@@ -237,7 +221,6 @@ Intern Agents (IA) collect and preprocess raw data from on-chain and off-chain s
         - Delivers comprehensive investment guidance and strategic suggestions to MTA.
         - Forwards relevant information to the MTA based on interactions with human operators.
 
-
 3. **Master Trading Agent (MTA) (OPENAI)**
     - Receives consolidated insights from **Social Narrative EAA** and **Technical Analysis EAA**.
     - Receives forwarded information from **Advisor Terminal EAA**.
@@ -249,8 +232,7 @@ Intern Agents (IA) collect and preprocess raw data from on-chain and off-chain s
 
 ### Integrating Token Investment & DLMM Pool Strategies
 
-
-
+![](docs/png/investment_flow.png)
 
 - **Token Investment:**
     - **MTA** decides to invest in selected tokens based on information from **Social Narrative EAA** and **Technical Analysis EAA**.
@@ -301,9 +283,7 @@ Intern Agents (IA) collect and preprocess raw data from on-chain and off-chain s
 
 ## Nirvana System
 
-
-Caligraph.png
-
+![](docs/png/misa-nirvana.png)
 
 ### Overview
 
@@ -375,25 +355,24 @@ The system leverages the **Eliza Framework** as its foundational architecture, c
 
 #### Components
 
-
-
+![](docs/png/eliza_framework_component_connection.png)
 
 1. **Eliza Framework Integration**
     - Utilize the Eliza Framework to manage and orchestrate interactions between various AI agents.
     - Contribute to the Eliza Framework by developing modules that facilitate DLMM pool participation, including token investment and liquidity provisioning functionalities.
 
 
-2. **Scheduler**
+1. **Scheduler**
     - Use Eliza Framework’s built-in scheduling capabilities.
     - Ensure fault tolerance: if a cycle is missed or delayed, the framework allows for graceful recovery in the next iteration.
 
 
-3. **Data Fetcher**
+1. **Data Fetcher**
     - Use Eliza Framework’s built-in data fetching module.
     - Parse and validate responses to ensure data integrity before passing them to the Strategy Engine within the framework.
 
 
-4. **Strategy Engine**
+1. **Strategy Engine**
     - **Input:** Array of pre-validated pool metrics (TVL, volume, fee rates, historical context) fetched through the Eliza Framework.
     - **Process:**
         - Utilize AI agents managed by the Eliza Framework to analyze the data and generate actionable strategies.
@@ -402,7 +381,7 @@ The system leverages the **Eliza Framework** as its foundational architecture, c
     - **Fallback Mode:** Implement deterministic rules within the Eliza Framework if AI agent responses are delayed or unavailable (e.g., API issues with the model).
 
 
-5. **Execution Layer**
+1. **Execution Layer**
     - Integrate with the Meteora DLMM SDK (`@meteora/dlmm-sdk`) through the Eliza Framework to execute on-chain transactions: `swap`, `addLiquidity`, `removeLiquidity`.
     - Prioritize safety checks:
         - Simulate transactions before broadcast.
@@ -411,7 +390,7 @@ The system leverages the **Eliza Framework** as its foundational architecture, c
     - Introduce a transaction queue managed by the Eliza Framework to batch operations, reducing overhead and potential MEV (Miner Extractable Value) attacks.
 
 
-6. **Storage & Logging**
+1. **Storage & Logging**
     - Utilize Eliza Framework’s storage modules to persist all decisions, AI agent responses, trading outcomes, and error logs in PostgreSQL.
     - Implement a dashboard integrated with the Eliza Framework to visualize performance, ROI over time, and parameter changes.
     - Historical data can be replayed within the Eliza Framework for backtesting improved AI prompts and adjusting base strategies.
@@ -435,12 +414,12 @@ By leveraging the Eliza Framework, the system ensures robust management of AI ag
     - Refine AI agent prompts if outcomes deviate significantly from expectations.
 
 
-2. **Strategy Refinement**
+1. **Strategy Refinement**
     - Integrate external data: social media sentiment (via Twitter, Telegram, Discord, etc.), hackathon announcements, and DAO governance signals.
     - If a proves overly optimistic, AI-driven reasoning can recommend a more conservative target or alternative metrics (e.g., focus on stable pools with lower but steadier yields).
 
 
-3. **Continuous Improvement**
+1. **Continuous Improvement**
     - Leverage historical datasets to fine-tune AI agent prompts and improve model instructions.
     - Implement more sophisticated exit conditions aligned with the DLMM price curves. For instance, AI agents could suggest partial position unwind if market conditions hint at a protracted downturn.
     - Enhance UX with real-time dashboards.
@@ -479,17 +458,17 @@ The **Point Farming System** is an incentivization mechanism designed to reward 
     - IA monitors these channels, identifying and evaluating the quality and relevance of user contributions.
 
 
-2. **Scoring Mechanism:**
+1. **Scoring Mechanism:**
     - Each valuable contribution is assigned a **score** based on its impact and usefulness.
     - Scoring criteria may include accuracy of predictions, timeliness of information, and overall contribution to enhancing investment strategies.
 
 
-3. **Rewards and Incentives:**
+1. **Rewards and Incentives:**
     - Accumulated scores are used to determine eligibility for **token airdrops** and other rewards.
     - High-scoring users receive periodic airdrops, increasing their engagement and fostering a collaborative community.
 
 
-4. **Leaderboard and Recognition:**
+1. **Leaderboard and Recognition:**
     - A public leaderboard showcases top contributors, promoting healthy competition and encouraging high-quality contributions.
     - Regular recognition of top contributors reinforces positive participation and sustained engagement.
 
@@ -510,17 +489,17 @@ The **Point Farming System** is an incentivization mechanism designed to reward 
     - Develop bots or monitoring tools to track and evaluate user contributions in real time.
 
 
-2. **Scoring and Reward Distribution:**
+1. **Scoring and Reward Distribution:**
     - Define clear scoring criteria and automate the scoring process using IA.
     - Schedule periodic airdrops based on accumulated user scores, ensuring timely and fair reward distribution.
 
 
-3. **Leaderboard Management:**
+1. **Leaderboard Management:**
     - Implement a transparent and real-time leaderboard accessible to all participants.
     - Regularly update rankings and highlight top contributors to maintain motivation and participation.
 
 
-4. **Feedback and Improvement:**
+1. **Feedback and Improvement:**
     - Collect user feedback to refine the scoring system and reward mechanisms.
     - Continuously enhance the platform based on community needs and system performance.
 
@@ -556,24 +535,24 @@ The GrasS platform will transform the Nirvana System’s agent collaboration fra
 
 1. **Agent Group Platform Development**
    - Customizable agent groups configured to perform specialized tasks, mirroring the collaborative Nirvana framework.
-   -        Dynamic agent interaction ensures adaptability and continuous improvement.
+   - Dynamic agent interaction ensures adaptability and continuous improvement.
 2. **Subscription-Based Personalized AI Agent Education System**
-   -        Users train agents to reflect their unique goals and preferences through a guided, subscription-driven education system.
-   -        Agents adapt over time using historical data and user feedback.
+   - Users train agents to reflect their unique goals and preferences through a guided, subscription-driven education system.
+   - Agents adapt over time using historical data and user feedback.
 3. **Personalized Data Aggregation & Deployment**
-   -        Aggregates real-time data from diverse sources like social media, market APIs, and proprietary databases.
-   -        Deploy data-driven strategies tailored to individual objectives.
+   - Aggregates real-time data from diverse sources like social media, market APIs, and proprietary databases.
+   - Deploy data-driven strategies tailored to individual objectives.
 4. **Seamless Automated Launching Processes**
-   -        Fully automated deployment with pre-built templates and guided setups.
-   -        Rapid onboarding with intuitive API integration and low technical barriers.
+   - Fully automated deployment with pre-built templates and guided setups.
+   - Rapid onboarding with intuitive API integration and low technical barriers.
 
 
 ### Benefits
--        **Personalized Insights**: Tailored agent strategies align with user-specific objectives and industry demands.
--        **Scalability**: Designed to handle increasing complexity and diverse use cases across various domains.
--        **Efficiency**: Automated processes reduce operational overhead, enabling rapid decision-making.
--        **Accessibility**: Subscription-based pricing makes advanced AI capabilities affordable and easy to adopt for businesses and individuals alike.
--        **Continuous Learning**: Feedback-driven agent improvements ensure up-to-date strategies and better decision-making over time.
+- **Personalized Insights**: Tailored agent strategies align with user-specific objectives and industry demands.
+- **Scalability**: Designed to handle increasing complexity and diverse use cases across various domains.
+- **Efficiency**: Automated processes reduce operational overhead, enabling rapid decision-making.
+- **Accessibility**: Subscription-based pricing makes advanced AI capabilities affordable and easy to adopt for businesses and individuals alike.
+- **Continuous Learning**: Feedback-driven agent improvements ensure up-to-date strategies and better decision-making over time.
 
 
 The GraaS platform will empower users to leverage collaborative intelligence, turning the Nirvana mechanism into a practical, widely accessible tool for strategic problem-solving and innovation.
