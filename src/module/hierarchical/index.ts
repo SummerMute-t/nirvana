@@ -44,18 +44,43 @@ class LeaderAgent {
    */
   async generateMeetingStartMessage(membersRoles: Member[], goal: string): Promise<string | undefined> {
     const rolesDescription = membersRoles.map(member => `${member.name} (${member.role})`).join(', ');
-    const response = await this.elizaConnector.sendMessage(this.leader.id, `The meeting is starting. Participants: ${rolesDescription}. Goal: ${goal}. You are leader, Please generate intro message.`);
+    const response = await this.elizaConnector.sendMessage(this.leader.id, `The meeting is starting. Your role is the leader, and you need to deliver a clear and professional opening message. Introduce the meeting, state your role, explain the purpose of the meeting, and set the tone for productive discussions. Incorporate the following details:
+1.Participants: ${rolesDescription}
+2.Meeting Goal: ${goal}
+
+Ensure the tone is formal yet approachable to engage all participants effectively.`);
+
     return response?.text;
   }
 
   /**
    * Generates the meeting start message based on members' roles.
    * @param membersRoles - Array of member objects with their roles.
+   * @param summary - The summary of the meeting.
    * @returns The meeting start message.
    */
-  async generateMeetingEndMessage(membersRoles: Member[]): Promise<string | undefined> {
+  async generateMeetingEndMessage(membersRoles: Member[], summary: string = ''): Promise<string | undefined> {
     const rolesDescription = membersRoles.map(member => `${member.name} (${member.role})`).join(', ');
-    const response = await this.elizaConnector.sendMessage(this.leader.id, `The meeting is concluded. Participants: ${rolesDescription}. You are leader, Please generate outro message.`);
+    const response = await this.elizaConnector.sendMessage(this.leader.id, `The meeting has concluded. As the leader, deliver a concise and professional closing message. Summarize key outcomes or decisions, express gratitude to participants, and outline any next steps or follow-up actions.
+1.Participants: ${rolesDescription}
+2.Key Outcomes: ${summary || 'N/A'}
+
+Ensure the tone is appreciative and motivating, leaving participants with a clear understanding of what’s next.`);
+    return response?.text;
+  }
+
+  /**
+   * Generates the meeting summary based on the full log of the meeting.
+   * @param context - Full log of the meeting.
+   * @returns The meeting start message.
+   */
+  async generateMeetingSummary(context: string): Promise<string | undefined> {
+    const response = await this.elizaConnector.sendMessage(this.leader.id, `Generate a concise and professional summary of the meeting based on the following log. Focus on key points, decisions made, and any action items:
+Context:
+${context}
+
+Ensure the summary is clear, actionable, and provides a good overview of the meeting.`);
+
     return response?.text;
   }
 
