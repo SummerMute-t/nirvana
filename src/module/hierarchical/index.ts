@@ -133,7 +133,7 @@ export class HierarchicalSystem {
 
     this.maxCycles = maxCycles;
     this.currentCycle = 0;
-    this.reportContent = `# Lushan System Report (Hierarchical Mode)\n\nGenerated on ${new Date().toLocaleString()}\n\n`;
+    this.reportContent = `# Nirvana System Report (Hierarchical Mode)\n\nGenerated on ${new Date().toLocaleString()}\n\n`;
   }
 
   /**

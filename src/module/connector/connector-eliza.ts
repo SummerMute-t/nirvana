@@ -19,7 +19,7 @@ export default class ElizaConnector {
     const payload = {
       text: text,
       userId: "system@nirvana",
-      userName: "Lushan System"
+      userName: "Nirvana System"
     };
     try {
       const response = await axios.post<ElizaResponse[]>(url, payload, {
